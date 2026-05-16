@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>to do list</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
@@ -15,9 +15,9 @@
         </div>
 
         <form action="" id="form_data">
-            <input type="text" name="myitem" >
-            <input type="date" name="date">
-            <input type="number" name="cost">
+            <input class="input-box" type="text" name="myitem" placeholder="name expense">
+            <input class="input-box" type="date" name="date">
+            <input class="input-box" type="number" name="cost" placeholder="how costly is your expense">
             <label for="category">Choose a category:</label>
             <select name="category" id="category">
                 <option value="Rent">Rent</option>
@@ -27,13 +27,13 @@
                 <option value="Others">Others</option>
             </select>
         </form>
-        <button type="button" id="btn" class="btn">Click me</button>
 
         <div class="controls">
+            <button type="button" id="btn" class="btn">Click me</button>
             <div>
-                <button class="clear-button">clear expenses</button>
+                <button class="btn" id="clear-button">clear expenses</button>
             </div>
-            <div>
+            <div class="filter-dropdown">
                 <label for="filter">filter expenses by:</label>
                 <select name="filter" id="filter">
                     <option value="Date">Date</option>
